@@ -17,7 +17,7 @@ class Report extends Component {
         {
           label: 'Revenue 2019',
           fill: true,
-          lineTension: 0.1,
+          lineTension: 0.5,
           backgroundColor: 'rgba(75,192,192,0.4)',
           borderColor: 'rgba(75,192,192,1)',
           borderCapStyle: 'butt',
@@ -38,7 +38,7 @@ class Report extends Component {
         {
           label: 'Revenue 2018',
           fill: true,
-          lineTension: 0.1,
+          lineTension: 0.5,
           backgroundColor: ["#f00","#f40","#B5EE1E","#1E5AEE","#EE1E60","#801EEE","#EE891E"],
           borderColor: 'rgba(75,192,192,1)',
           borderCapStyle: 'butt',

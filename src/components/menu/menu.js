@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import { withRouter } from "react-router-dom"
 class Menu extends Component {
   render() {
+    const {pathname} = this.props.location;
     return (
       <aside className="main-sidebar">
         {/* sidebar: style can be found in sidebar.less */}
@@ -17,12 +18,12 @@ class Menu extends Component {
                 </span>
               </a>
               <ul className="treeview-menu">
-                <li>
+              <li className={pathname == "/report"  ? 'active' : null} >
                  
                   <Link to="/report"><i className="fa fa-circle-o" />Report</Link> 
                   
                 </li>
-                <li className="/login">
+                <li className={pathname == "/stock"  ? 'active' : null} >
                 <Link to="/stock">
                     <i className="fa fa-circle-o" /> Stock
                 </Link> 
@@ -39,4 +40,4 @@ class Menu extends Component {
   }
 }
 
-export default Menu;
+export default withRouter(Menu);

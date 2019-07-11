@@ -100,6 +100,7 @@ class Stock extends Component {
   }
 
   render() {
+    const { count } = this.props.stockReducer;
     return (
       <div className="content-wrapper">
         {/* Content Header (Page header) */}
@@ -134,7 +135,7 @@ class Stock extends Component {
                     </span>
                     <div className="info-box-content">
                       <p className="p_custom">Products</p>
-                      <h2>12</h2>
+                      <h2> {count}</h2>
                     </div>
                   </div>
                 </div>
@@ -164,7 +165,7 @@ class Stock extends Component {
                     </span>
                     <div className="info-box-content">
                       <p className="p_custom">SoldOut</p>
-                      <h2>12</h2>
+                      <h2> {count}</h2>
                     </div>
                   </div>
                 </div>
