@@ -2,9 +2,9 @@
 
 In the project directory, you can run:
 ### `Cd api/`
-### `npm i/`
+### `npm i`
 ### `Cd ..`
-### `npm i/`
+### `npm i`
 ### `npm start`
 
 Runs the app in the development mode.<br>
